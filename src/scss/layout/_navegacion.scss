@@ -7,12 +7,17 @@
         justify-content: space-between;
         align-items: center;
 
-        // .enlace { //Esta clase se la agregue al enlace
+        // img{ //Esta clase se la agregue al enlace
         //     flex: 1;
         // }
-        // .navegacion {
-        //     flex: 1;
-        // }
+        .navegacion {
+            display: flex;
+            // flex: 1;
+        }
+         a  {
+             width: 35%;
+        }
+       
     }
    
 }
