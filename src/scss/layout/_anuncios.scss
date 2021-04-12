@@ -13,6 +13,7 @@
 
     .contenido-anuncio{
         padding: 2rem;
+     
     }
 
     h3,p{
@@ -34,8 +35,9 @@
         display: flex;
 
         img{
-            flex: 0 0 3rem;
-            margin-right: 1.5em;
+            flex: 0 0 2.52rem;
+            margin-right: 1.0rem;
+      
             &:first-child{
                 margin-left: 2rem;
             }
@@ -47,6 +49,13 @@
     }
 }
 
+
+
+picture img{
+    border-image-width: 25%;
+    border: silver 3px solid;  
+    border-radius: 5%;
+}
 
 
 
