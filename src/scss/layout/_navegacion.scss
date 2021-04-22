@@ -24,6 +24,8 @@
 
 .navegacion{
 
+    display: none;
+
     @include tablet{
         display: flex;
         align-items: center;
@@ -46,3 +48,30 @@
         }
     }
 }
+
+img .logo{
+    width: 100%;
+}
+
+
+/** Manu de hamburguesa*/
+
+.mobile-menu{
+    @include tablet{
+        display: none;
+    }
+
+    img{
+        width: 5rem;
+    }
+}
+
+.barra{
+    align-items: center;
+}
+
+
+.mostrar{
+    display: block;
+}
+

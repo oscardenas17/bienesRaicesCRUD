@@ -42,3 +42,11 @@
         max-width: 60rem;
     }
 }
+
+
+a .logo{
+    height: 4rem;
+     @include tablet{
+     height: auto;}
+   
+ }
