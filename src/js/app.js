@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     eventListeners();
+
+    darkMode();
 });
 
 function eventListeners(){
@@ -17,4 +19,13 @@ function navegacionResponsive(){
     }else{
         navegacion.classList.add('mostrar');
     }
+}
+
+
+function darkMode(){
+    const botonDarkmode = document.querySelector('.dark-mode-boton');
+
+    botonDarkmode.addEventListener('click', function(){
+        document.body.classList.toggle('dark-mode');
+    });
 }
