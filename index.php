@@ -1,7 +1,10 @@
 <?php 
+// declare(strict_types = 1);
 
-    $inicio = true;
-    include 'includes/templates/header.php';
+    require 'includes/funciones.php';
+   
+    // include 'includes/templates/header.php';
+    incluirTemplate('header',  $inicio = true);
 
 
 ?>
@@ -223,6 +226,8 @@
         </section>
     </div>
 
-  <?php include 'includes/templates/footer.php'?>
+  <?php 
+  include 'includes/templates/footer.php'
+  ?>
   
     
