@@ -17,6 +17,6 @@
 
     </footer>
 
-    <script src="/blog.php"></script>
+    <script src="/build/js/bundle.min.js"></script>
 </body>
 </html>
