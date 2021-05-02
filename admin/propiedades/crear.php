@@ -1,7 +1,11 @@
 <?php 
-    require '../../includes/funciones.php';
+   //Base de datos
+   require '../../includes/config/database.php';
+   $db  = conectarDB();
+//    var_dump($db);
    
-    // include 'includes/templates/header.php';
+   require '../../includes/funciones.php';
+       // include 'includes/templates/header.php';
     incluirTemplate('header');
 
 
