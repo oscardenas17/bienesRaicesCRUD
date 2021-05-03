@@ -2,7 +2,11 @@
    //Base de datos
    require '../../includes/config/database.php';
    $db  = conectarDB();
-//    var_dump($db);
+                 // var_dump($db);
+
+    // Consultar para obtener los vendedores
+    $consulta = "SELECT * FROM vendedores;";
+    $resultado = mysqli_query($db,$consulta);
 
 
 //Arreglo para mensajes con errores
@@ -120,8 +124,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
                 <select name="vendedor" id="">
                     <option value="">-- Seleccione --</option>
-                    <option value="1">Juan</option>
-                    <option value="2">karen</option>
+
+                    <?php while($vendedor = mysqli_fetch_assoc($resultado)): ?>
+                        <option  <?php echo $vendedorId === $vendedor['id'] ? 'selected' : '';  ?>  value="<?php echo $vendedor['id']; ?>"> <?php echo $vendedor['nombre'] .' '.  $vendedor['apellido']; ?> </option>
+                    <?php endwhile; ?>
+
                 </select>
             </fieldset>
 
